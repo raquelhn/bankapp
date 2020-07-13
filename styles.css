@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Public Sans', sans-serif;
+    line-height: 1.5;
+    box-sizing: content-box;
+    
+}
+
+h1{
+    font-size: 38px;
+    font-weight: 400;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 20px;
+}
+h4{
+    font-weight: 400;
+    font-size: 17px;
+}
+
+p{
+    font-weight: 300;
+    font-size: 16px;
+    color:hsl(233, 8%, 62%);
+}
+
+button{
+    background-color: hsl(192, 70%, 51%) ;
+    border:none;
+    padding:12px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    color:White;
+}
+
+ul, li {
+    list-style: none;
+}
+
+#wrapper{
+    max-width: 1440px;
+    width: 100%;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*nav*/
+.button-mobile{
+    display: none;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+    background-color: white;
+}
+
+.menu .menu-container{
+    flex:33.3%;
+    z-index: 1;
+    background-color: white;
+    padding-bottom: 15px;
+    padding-top:15px
+}
+
+.menu-container ul{
+    display: flex;
+    color:hsl(233, 8%, 62%);
+}
+
+.menu-container li{
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/*Intro section*/
+
+#wrap-intro{
+    display: flex;
+    text-align: left;
+    background-color: hsl(0, 0%, 98%);
+    position: relative;
+    width: 100%;
+    
+    
+}
+.intro-box .left{
+    flex: 50%;
+}
+
+.intro-box .right{
+    overflow: hidden;
+    flex: 50%;
+}
+.intro-box img{
+    width: 100%;
+}
+
+.intro-box .box-content{
+    padding-left: 25%;
+    padding-top: 25%;
+    padding-bottom: 5%;
+}
+
+
+.intro-box h1,p{
+    margin-bottom: 20px;
+}
+
+/*nav position*/
+.intro-phone{
+    top: -10%;
+    right: -5%;
+    position:absolute;
+    width: 48%;
+}
+
+.intro-phone img{
+    z-index: 0;
+}
+
+/*Card section*/
+
+#reasons-why{
+    background-color: hsl(220, 16%, 96%);
+    padding-top: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 1440px;
+    
+}
+#reasons-why h2,p{
+    margin-bottom: 20px;
+}
+
+.wrap-card{
+    display: flex;
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    
+}
+.card{
+    flex:25%;
+    padding: 20px;
+}
+.card img, h3{
+    margin-bottom: 20px;
+}
+
+/*Articles section*/
+#articles{
+    background-color:hsl(0, 0%, 98%) ;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    max-width: 1440px;
+    
+}
+
+#articles h2{
+    margin-bottom: 20px;
+}
+
+.articles-wrap{
+    display: flex;
+}
+
+.articles-box{
+    flex:25%;
+    background-color: white;
+}
+
+.articles-box{
+    margin-left: 20px;
+}
+.articles-box:first-child {
+   margin-left: 0px;
+}
+
+
+.articles-box img{
+    width: 100%;
+}
+
+.articles-box address{
+    font-size: 12px;
+    font-weight: 300;
+    color: hsl(233, 8%, 62%);
+    padding-bottom: 10px;
+}
+
+.articles-box  .articles-box-content{
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/*footer*/
+.footer{
+    display: flex;
+    background-color: hsl(233, 26%, 24%);
+    color:white;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.footer-container{
+    flex:33.3%
+}
+
+.footer img{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-container .footer-menu{
+    display:flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.footer-menu li{
+    flex: 50%;
+    font-size: 12px;
+    line-height: 2;
+}
+.footer-container span{
+    font-size: 10px;
+    color: hsl(233, 8%, 62%);
+    padding-right: 30px;
+}
+
+/*Media*/
+@media (max-width: 500px){
+    *{
+        line-height: 1.5;
+    }
+    h1{
+        font-size: 30px;
+        line-height: 1.2;
+    }
+    p{
+        font-size: 14px;
+    }
+    .menu{
+        display: block;
+        justify-content: space-between;
+        z-index: 1;
+        background-color: white;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top:5%
+    }
+    .menu .menu-container{
+        float: left;
+        justify-content: center;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    .button-mobile{
+        display: inline;
+        float: right;
+        padding-top: 3%;
+       
+    }
+    .menu .options, .button{
+        display: none;
+    }
+    #wrap-intro{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        background-color: hsl(0, 0%, 98%);
+        position: relative;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .intro-box .box-content{
+        padding:10%;
+    }
+    .intro-box .left{
+      justify-content: center;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .intro-box .right{
+        overflow: hidden;
+        
+    }    
+    
+    /*nav position*/
+    .intro-phone{
+    top: -5%;
+    right: 10%;
+    left: 10%;
+    position:absolute;
+    width: 80%;
+    }
+
+    #reasons-why{
+        padding:10%;
+        text-align: center;
+        
+    }
+    
+    .wrap-card{
+        display: block;
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        
+    }
+    /*Articles section*/
+    #articles h2{
+    text-align: center;
+    }
+
+    .articles-wrap{
+        display: block;
+    }
+
+    .articles-box{
+        margin-left: 0px;
+    }
+
+    /*footer*/
+    .footer{
+        display: block;
+        padding:10%
+    }
+
+    .footer-container .footer-menu{
+        display:block;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .footer-menu li{
+        padding:4px;
+    }
+    .footer-icons img{
+        padding-right:5px;
+        padding-left: 5px;
+    }
+    .footer-container button{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .footer-container span{
+        padding:10px
+    }
+     
+}
